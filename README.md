@@ -4,4 +4,7 @@ I want to make a site that could be used for ranked voting or polls. This could 
 ## Homepage Mockup
 ![an image showing a mockup of the homepage](https://github.com/swalloich/startup/blob/main/startUpSpec-home.png)<br>
 ## Premium Page Mockup
-![an image showing a mockup of the premium page](https://github.com/swalloich/startup/blob/main/startUpSpec-prem.png)
+![an image showing a mockup of the premium page](https://github.com/swalloich/startup/blob/main/startUpSpec-prem.png)<br>
+##AWS<br>
+The command `ssh -i <path to .pem file> ubuntu@<aws server ip>` can be used to ssh into the console.<br>
+The IP of the page is 18.224.47.48
