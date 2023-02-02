@@ -8,3 +8,6 @@ I want to make a site that could be used for ranked voting or polls. This could 
 ## AWS
 The command `ssh -i <path to .pem file> ubuntu@<aws server ip>` can be used to ssh into the console.<br>
 The IP of the page is 18.224.47.48
+
+## Route 53
+I didn't realize it was so easy to add subdomains. In theory you would go to the hosted zone screen and point a certain subdomain to a specific file on a server.
