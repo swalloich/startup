@@ -10,7 +10,7 @@ The command `ssh -i <path to .pem file> ubuntu@<aws server ip>` can be used to s
 The IP of the page is 18.224.47.48
 
 ## Route 53
-I didn't realize it was so easy to add subdomains. In theory you would go to the hosted zone screen and point a certain subdomain to a specific file on a server. My subdomain is [rankpolls.click](https://rankpolls.click)
+I didn't realize it was so easy to add subdomains. In theory you would go to the hosted zone screen and point a certain subdomain to a specific file on a server. My domain is [rankpolls.click](https://rankpolls.click)
 
 ## HTML and HTTPS
 The `<input type="color">` is a good, built in, way to add a color picker to a page if it is needed. I always figured sites that needed them had to find some external api or make their own.<br>
