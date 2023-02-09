@@ -16,3 +16,6 @@ I didn't realize it was so easy to add subdomains. In theory you would go to the
 The `<input type="color">` is a good, built in, way to add a color picker to a page if it is needed. I always figured sites that needed them had to find some external api or make their own.<br>
 The js `.arc(x, y, b, e, r)` function asks for the starting and ending angles in radians.<br>
 The default protocol for an aws server is HTTPS. To get it to encrypt the page being send, just don't specify a port.
+
+## HTML and Simon
+I thought the `svg` tag was interesting. I don't understand anything about using it, but It seems like a useful tool to use. I'm now wondering if I can achieve a similar effect to what was used in the simon buttons using css.
