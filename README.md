@@ -19,3 +19,6 @@ The default protocol for an aws server is HTTPS. To get it to encrypt the page b
 
 ## HTML and Simon
 I thought the `svg` tag was interesting. I don't understand anything about using it, but It seems like a useful tool to use. I'm now wondering if I can achieve a similar effect to what was used in the simon buttons using css.
+
+## CSS Practice
+The `box-shadow` property can be used to create shadows behind elements. There are 5 properties for two different parts. EG: `box-shadow: 0px 0px 0px 0px gray, 0px 0px 0px 0px gray` The first four determine width, offset, fade, another I'm not sure about, and color. The bullet points can be removed from a `ul` element, and all the properties that make a `ul` look how it does can be removed using things such as `display: flex` and so on.
