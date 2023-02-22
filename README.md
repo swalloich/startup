@@ -6,7 +6,7 @@ I want to make a site that could be used for ranked voting or polls. This could 
 ## Premium Page Mockup
 ![an image showing a mockup of the premium page](https://github.com/swalloich/startup/blob/main/startUpSpec-prem.png)<br>
 ## AWS
-The command `ssh -k <path to .pem file> -h <aws server ip> -s <subdomain>` can be used to ssh into the console.<br>
+The command `ssh -i <path to .pem file> ubuntu@<aws server ip>` can be used to ssh into the console.<br>
 The IP of the page is 18.224.47.48
 
 ## Route 53
@@ -25,3 +25,6 @@ The `box-shadow` property can be used to create shadows behind elements. There a
 
 ## CSS Flex
 I didn't realize how many otherwise pretty complicated problems flex makes super easy. Need something centered vertically? Use flex. Want the width of something to be "whatever is left"? Use flex. Also, I you need to set a lot of things to be a specific width if you want a nav link to look good when it is hovered over.
+
+## deployFiles.sh
+To run the `deployFiles.sh` bash script, the following syntax is used: `./deployFiles.sh -k <path to .pem file> -h <domain> -s <subdomain>`
