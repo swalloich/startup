@@ -6,7 +6,7 @@ I want to make a site that could be used for ranked voting or polls. This could 
 ## Premium Page Mockup
 ![an image showing a mockup of the premium page](https://github.com/swalloich/startup/blob/main/startUpSpec-prem.png)<br>
 ## AWS
-The command `ssh -i <path to .pem file> ubuntu@<aws server ip>` can be used to ssh into the console.<br>
+The command `ssh -k <path to .pem file> -h <aws server ip> -s <subdomain>` can be used to ssh into the console.<br>
 The IP of the page is 18.224.47.48
 
 ## Route 53
