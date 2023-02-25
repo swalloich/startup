@@ -1,0 +1,10 @@
+html
+{
+    --main-color: #3067FA;
+    --accenting-color: #2A8BDE;
+}
+
+.header
+{
+    background-color: var(--main-color);
+}
