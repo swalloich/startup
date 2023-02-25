@@ -18,3 +18,17 @@ p
     margin-left: 5%;
     margin-right: 5%
 }
+
+.lists
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.get-button
+{
+    margin: auto;
+    margin-top: 20px;
+    width: 30%;
+    height: 3em;
+}
