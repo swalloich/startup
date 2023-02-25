@@ -1,0 +1,20 @@
+.video
+{
+    width: 80%;
+    height: 500px;
+    border-radius: 2px;
+    border-style: solid;
+    margin: auto;
+}
+
+h1, h2
+{
+    margin-left: 10%;
+}
+
+p
+{
+    font-size: 1.25em;
+    margin-left: 5%;
+    margin-right: 5%
+}
