@@ -32,3 +32,9 @@ p
     width: 30%;
     height: 3em;
 }
+
+.button-container
+{
+    width: 100%;
+    display: flex;
+}

@@ -3,27 +3,29 @@ html
     --main-color: #3067FA;
     --secondary-color: #2A8BDE;
     --footer-color: #2F2F3D;
+
+    height: 100vh;
 }
 
 html, body
 {
-    margin: 0px;
-    height: 100%;
+  margin: 0px;
 }
 
 header
 {
-    display: flex;
-    justify-content: center;
-    background-color: var(--main-color);
-    min-height: 75px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-color);
+  min-height: 75px;
+  flex: 0 1 auto;
 }
 
 .header-inner-container
 {
-    display: flex;
-    width: 65vw;
-    justify-content: space-between;
+  display: flex;
+  width: 65vw;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 1500px)
@@ -91,7 +93,7 @@ body
 {
   display: flex;
   flex-flow: column;
-  height: 100%;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -99,22 +101,20 @@ main
 {
   display: flex;
   width: 100%;
+  min-height: 100%;
   flex: 1 1 auto;
   overflow: auto;
 }
 
-/*.margin, .page-center
-{
-  height: 100%;
-} */
-
 .page-center
 {
-  display: flex;
   flex-direction: column;
   flex: 2;
   padding: 3%;
   box-shadow: 3px 3px 3px -3px gray, -3px 0px 3px -3px gray;
+  min-height: 100%;
+  min-height: fit-content;
+  justify-content: start;
 }
 
 footer
