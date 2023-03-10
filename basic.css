@@ -2,11 +2,13 @@ html
 {
     --main-color: #3067FA;
     --secondary-color: #2A8BDE;
+    --footer-color: #2F2F3D;
 }
 
 html, body
 {
     margin: 0px;
+    height: 100%;
 }
 
 header
@@ -89,7 +91,7 @@ body
 {
   display: flex;
   flex-flow: column;
-  height: fit-content;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -97,15 +99,14 @@ main
 {
   display: flex;
   width: 100%;
-  height: 100%;
-  flex: 1;
+  flex: 1 1 auto;
   overflow: auto;
 }
 
-.margin, .page-center
+/*.margin, .page-center
 {
   height: 100%;
-}
+} */
 
 .page-center
 {
@@ -114,4 +115,10 @@ main
   flex: 2;
   padding: 3%;
   box-shadow: 3px 3px 3px -3px gray, -3px 0px 3px -3px gray;
+}
+
+footer
+{
+  flex: 0 1 40px;
+  background-color: var(--footer-color);
 }
