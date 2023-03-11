@@ -225,6 +225,18 @@ class Question
      */
     equals(question)
     {
-        
+        let qMatch = true;
+        for (let i = 0; i < this.#options.length; i++)
+        {
+            if (this.#options[i] != question.getOptions()[i])
+            {
+                qMatch = false;
+                break;
+            }
+        }
+
+        return (this.#questionText == question.getQuestionText() &&
+                this.#questionType == question.getQuestionType() &&
+                qMatch);
     }
 }
