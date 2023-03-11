@@ -17,7 +17,6 @@
 
 .form-subheading
 {
-    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 2%;
@@ -26,4 +25,9 @@
 .form-indent
 {
     margin-left: 5%;
+}
+
+.unimplemented
+{
+    display: none;
 }
