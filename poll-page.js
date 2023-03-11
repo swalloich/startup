@@ -12,6 +12,11 @@ function showPollModal()
     $('#poll-add-modal').modal('show');
 }
 
+function closePollModal()
+{
+    $('#poll-add-modal').modal('hide');
+}
+
 function addPoll()
 {
     const pollTitleElement = document.getElementById('poll-title');

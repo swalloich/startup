@@ -19,7 +19,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="poll-add-modal-title">Add Poll</h5>
-                        <button type="button" class="btn close" data-dismiss="modal" aria-label="close">
+                        <button type="button" class="btn close" data-dismiss="modal" aria-label="close" onclick="closePollModal()">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -49,12 +49,31 @@
                                     <h6>Questions</h6>
                                     <button class="btn btn-secondary">&plus; New Question</button>
                                 </div>
-                                <div></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-title1">Question</label>
+                                <input type="text" class="form-control" id="question-title1" placeholder="Question">
+                            </div>
+                            <div class="form-group form-indent">
+                                <label for="answer1-1">Answer</label>
+                                <input type="text" class="form-control question-answer" id="answer1-1" placeholder="Answer">
+                            </div>
+                            <div class="form-group form-indent">
+                                <label for="answer1-2">Answer</label>
+                                <input type="text" class="form-control question-answer" id="answer1-2" placeholder="Answer">
+                            </div>
+                            <div class="form-group form-indent">
+                                <label for="answer1-3">Answer</label>
+                                <input type="text" class="form-control question-answer" id="answer1-3" placeholder="Answer">
+                            </div>
+                            <div class="form-group form-indent">
+                                <label for="answer1-4">Answer</label>
+                                <input type="text" class="form-control question-answer" id="answer1-4" placeholder="Answer">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closePollModal()">Cancel</button>
                         <button type="button" class="btn btn-primary">Create Poll</button>
                     </div>
                 </div>
@@ -77,6 +96,9 @@
                 <div class="my-polls-heading">
                     <h1>My Polls</h1>
                     <button class="btn btn-secondary">&plus; New Poll</button>
+                </div>
+                <div class="list-group" id="polls-list">
+                    <div class="list-group-item">Example Item | 0 questions</div>
                 </div>
             </div>
             <div class="margin"></div>
