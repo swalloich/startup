@@ -1,10 +1,10 @@
 html
 {
-    --main-color: #3067FA;
-    --secondary-color: #2A8BDE;
-    --footer-color: #2F2F3D;
+  --main-color: #3067FA;
+  --secondary-color: #2A8BDE;
+  --footer-color: #2F2F3D;
 
-    height: 100vh;
+  height: 100vh;
 }
 
 html, body
