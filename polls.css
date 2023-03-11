@@ -1,0 +1,23 @@
+.my-polls-heading
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-polls-heading > button
+{
+    height: fit-content;
+}
+
+.date-time-row
+{
+    display: flex;
+}
+
+.form-subheading
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
