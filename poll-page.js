@@ -69,13 +69,4 @@ function updatePollList()
         newRow.innerHTML = `${pollItem.getTitle()} | ${pollItem.getQuestions().length} questions`;
         pollsList.appendChild(newRow);
     });
-
-    /*for (let pollItem in polls)
-    {
-        console.log(pollItem instanceof Poll)
-        newRow = document.createElement('div');
-        newRow.classList.add('list-group-item', 'poll-list-item');
-        newRow.innerHTML = `${pollItem.getTitle()} | ${pollItem.getQuestions().length} questions`;
-        pollsList.appendChild(newRow);
-    }*/
 }
