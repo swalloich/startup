@@ -7,6 +7,7 @@ class Poll
 
     constructor(pollTitle)
     {
+        this.setTitle(pollTitle);
         this.setStartDate(new Date());
         this.setEndDate(new Date());
         this.#questions = [];

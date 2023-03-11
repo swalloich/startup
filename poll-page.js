@@ -33,7 +33,7 @@ function addPoll()
     {
         if (item.value != '')
         {
-            answers.push(elem.value);
+            answers.push(item.value);
         }
     }
 
@@ -61,11 +61,21 @@ function updatePollList()
     // build list rows
     const pollsList = document.getElementById('polls-list');
     let newRow = null;
-    for (let pollItem in polls)
-    {
+
+    polls.forEach(pollItem => {
+        console.log(pollItem instanceof Poll)
         newRow = document.createElement('div');
         newRow.classList.add('list-group-item', 'poll-list-item');
         newRow.innerHTML = `${pollItem.getTitle()} | ${pollItem.getQuestions().length} questions`;
         pollsList.appendChild(newRow);
-    }
+    });
+
+    /*for (let pollItem in polls)
+    {
+        console.log(pollItem instanceof Poll)
+        newRow = document.createElement('div');
+        newRow.classList.add('list-group-item', 'poll-list-item');
+        newRow.innerHTML = `${pollItem.getTitle()} | ${pollItem.getQuestions().length} questions`;
+        pollsList.appendChild(newRow);
+    }*/
 }

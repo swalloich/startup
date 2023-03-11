@@ -12,7 +12,7 @@
         <script src="./poll.js"></script>
         <script src="poll-page.js"></script>
     </head>
-    <body>
+    <body onload="initiatePage()">
         <div class="modal fade" id="poll-add-modal" tabindex="-1" role="dialog" aria-hidden="true">
             <!-- See: https://getbootstrap.com/docs/4.0/components/modal/ -->
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -74,7 +74,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closePollModal()">Cancel</button>
-                        <button type="button" class="btn btn-primary">Create Poll</button>
+                        <button type="button" class="btn btn-primary" onclick="addPoll()">Create Poll</button>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
             <div class="page-center">
                 <div class="my-polls-heading">
                     <h1>My Polls</h1>
-                    <button class="btn btn-secondary">&plus; New Poll</button>
+                    <button class="btn btn-secondary" onclick="showPollModal()">&plus; New Poll</button>
                 </div>
                 <div class="list-group" id="polls-list">
                     <div class="list-group-item">Example Item | 0 questions</div>
