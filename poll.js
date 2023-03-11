@@ -1,14 +1,30 @@
 class Poll
 {
+    #title = null;
     #startDate = null;
     #endDate = null;
     #questions = null;
 
-    constructor()
+    constructor(pollTitle)
     {
         this.setStartDate(new Date());
         this.setEndDate(new Date());
         this.#questions = [];
+    }
+
+    getTitle()
+    {
+        return this.#title;
+    }
+
+    setTitle(pollTitle)
+    {
+        if (pollTitle instanceof String || typeof(pollTitle) == 'string')
+        {
+            this.#title = pollTitle;
+            return true;
+        }
+        return false;
     }
 
     getStartDate()
@@ -49,6 +65,11 @@ class Poll
             return true;
         }
         return false;
+    }
+
+    getQuestions()
+    {
+        return this.#questions;
     }
 
     pushQuestion(question)

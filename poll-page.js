@@ -29,24 +29,43 @@ function addPoll()
 
     let pollQuestionTitle = pollQuestionTitleElement.value;
     let answers = [];
-    questionAnswers.forEach(elem => {
-        if (elem.value != '')
+    for (let item of questionAnswers)
+    {
+        if (item.value != '')
         {
             answers.push(elem.value);
         }
-    });
+    }
 
     // TODO add poll date related functionalities
 
     let pollQuestion = new Question(pollQuestionTitle, 'radio', answers);
-    let newPoll = new Poll();
+    let newPoll = new Poll(pollTitleElement.value);
     newPoll.pushQuestion(pollQuestion);
     polls.push(newPoll);
 
+    // TODO add validation for form fields
     updatePollList();
+    closePollModal();
 }
 
 function updatePollList()
 {
+    // clean list
+    const pollsListItems = document.getElementsByClassName('poll-list-item');
+    for (let item of pollsListItems)
+    {
+        item.parentElement.removeChild(item);
+    }
 
+    // build list rows
+    const pollsList = document.getElementById('polls-list');
+    let newRow = null;
+    for (let pollItem in polls)
+    {
+        newRow = document.createElement('div');
+        newRow.classList.add('list-group-item', 'poll-list-item');
+        newRow.innerHTML = `${pollItem.getTitle()} | ${pollItem.getQuestions().length} questions`;
+        pollsList.appendChild(newRow);
+    }
 }
