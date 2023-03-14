@@ -28,3 +28,6 @@ I didn't realize how many otherwise pretty complicated problems flex makes super
 
 ## deployFiles.sh
 To run the `deployFiles.sh` bash script, the following syntax is used: `./deployFiles.sh -k <path to .pem file> -h <domain> -s <subdomain>`
+
+## Fetch
+To execute a function upon a successful fetch request, use `.then()`. To access the data in a JavaScript json object, use property accessors. EG: `const thing = response["object"]`.
